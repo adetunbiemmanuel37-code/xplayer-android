@@ -30,7 +30,7 @@ jobs:
         run: |
           unzip -o XPLAYER-Android-Ready.zip -d project
           cd project/xplayer-capacitor
-          npm install
+          npm install --legacy-peer-deps
           npm run build
 
       - name: Build Android APK
